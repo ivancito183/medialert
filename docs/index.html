@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo educativa del motor de alertas de MediAlert">
+  <title>MediAlert | Simulador de alertas</title>
+  <link rel="stylesheet" href="./demo.css">
+  <script src="./demo.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="tag">MEDIALERT · DEMO EDUCATIVA</span>
+      <h1>Simulador de alertas</h1>
+      <p>Prueba cómo el motor compara una dosis registrada con la prescripción en cuatro casos ficticios.</p>
+    </header>
+    <section class="card" aria-label="Verificar caso">
+      <label for="case">Caso de prueba</label>
+      <select id="case" disabled></select>
+      <dl>
+        <div><dt>Dosis prescrita</dt><dd id="prescribed">—</dd></div>
+        <div><dt>Dosis registrada</dt><dd id="entered">—</dd></div>
+      </dl>
+      <button id="check" disabled>Verificar dosis</button>
+      <div id="result" role="status" aria-live="polite"></div>
+    </section>
+    <footer>
+      <p>Para formación. Utiliza únicamente ejemplos ficticios y evalúa la coincidencia de dosis.</p>
+      <a href="https://github.com/ivancito183/medialert">Ver código e instalación en GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>

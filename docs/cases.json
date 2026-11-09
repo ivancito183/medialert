@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Dosis equivalente",
+    "prescribed": "1 g",
+    "entered": "1000 mg",
+    "blocked": false,
+    "message": "Las cantidades son equivalentes después de convertir las unidades."
+  },
+  {
+    "title": "Dosis multiplicada por 45",
+    "prescribed": "1 g",
+    "entered": "45 g",
+    "blocked": true,
+    "message": "La dosis registrada (45 g) no coincide con la prescripción vigente (1 g). Diferencia: 45 veces la dosis prescrita."
+  },
+  {
+    "title": "Error de unidad",
+    "prescribed": "500 mg",
+    "entered": "500 g",
+    "blocked": true,
+    "message": "Error de unidad: la cantidad numérica coincide (500) pero la unidad registrada (g) difiere de la prescrita (mg). Equivale a 1000 veces la dosis prescrita."
+  },
+  {
+    "title": "Unidad incompatible",
+    "prescribed": "500 mg",
+    "entered": "500 mL",
+    "blocked": true,
+    "message": "La unidad registrada (mL) no es compatible con la prescrita (mg): miden magnitudes distintas (volumen vs masa)."
+  }
+]

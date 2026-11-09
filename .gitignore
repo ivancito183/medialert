@@ -1,0 +1,16 @@
+.env
+.venv/
+__pycache__/
+node_modules/
+dist/
+*.pyc
+.pytest_cache/
+
+# Entornos, credenciales y bases locales
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite*
+*.pem
+*.key
