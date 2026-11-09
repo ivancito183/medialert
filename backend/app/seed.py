@@ -53,7 +53,7 @@ def pwd(var: str, shown: dict, key: str) -> str:
     return p
 
 
-def seed(reset: bool = False):
+def seed(reset: bool = False, *, show_passwords: bool = True):
     if reset:
         with engine.begin() as c:
             c.execute(text("DROP SCHEMA public CASCADE; CREATE SCHEMA public;"))
@@ -153,9 +153,10 @@ def seed(reset: bool = False):
                         frecuencia=f"{len(hs)} vez/veces al día", horarios=hs, fecha_inicio=hoy - timedelta(days=1),
                         fecha_fin=hoy + timedelta(days=4), observaciones="Prescripción ficticia de demostración"),
                   fake_req, db, doctor)
-    print("\nUsuarios ficticios (anote las claves; solo se muestran ahora):")
-    for k, v in shown.items():
-        print(f"  {k + '@medialert.demo':32s} {v}")
+    if show_passwords:
+        print("\nUsuarios ficticios (anote las claves; solo se muestran ahora):")
+        for k, v in shown.items():
+            print(f"  {k + '@medialert.demo':32s} {v}")
 
 
 if __name__ == "__main__":

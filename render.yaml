@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: medialert-demo
+    runtime: docker
+    plan: free
+    autoDeployTrigger: off
+    healthCheckPath: /api/health
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        value: sqlite:////tmp/medialert-demo.db
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: SEED_DOCTOR_PASSWORD
+        sync: false
+      - key: SEED_NURSE_PASSWORD
+        sync: false

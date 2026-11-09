@@ -4,6 +4,14 @@ Prototipo educativo de verificación de medicamentos. El motor de reglas compara
 
 **[Abrir simulador público de alertas](https://ivancito183.github.io/medialert/)**. Incluye cuatro casos ficticios con resultados generados por el motor de Python. La demo de GitHub Pages funciona sin cuenta ni clave y utiliza resultados precalculados. El proyecto completo incluye los paneles de medicina y enfermería, la bitácora y la API.
 
+## Publicar la aplicación con inicio de sesión
+
+[Desplegar Medialert en Render](https://render.com/deploy?repo=https%3A%2F%2Fgithub.com%2Fivancito183%2Fmedialert)
+
+Inicia sesión en Render y completa SEED_DOCTOR_PASSWORD y SEED_NURSE_PASSWORD en la pantalla de despliegue. Puedes usar las mismas contraseñas de demostración que ya tienes. Cuando termine, comparte el enlace .onrender.com del servicio. Los usuarios son ivan@medialert.demo y sofia@medialert.demo.
+
+La instancia gratuita crea una base separada con casos ficticios. Sus cambios se pierden al reiniciar el servicio. Para mostrar la demo usa datos ficticios.
+
 ## Ejecutar el proyecto completo
 
 Se requiere Python 3.12 y Node.js 22. Ejecuta estos comandos en PowerShell desde el repositorio.
